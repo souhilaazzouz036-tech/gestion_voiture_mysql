@@ -44,5 +44,17 @@ def supprimer_voiture(id):
         conn.commit()
 
         conn.close()
+def recuperer_voitures():
+    conn = connecter_db()
+    cursor = conn.cursor()
 
+    cursor.execute("SELECT * FROM voiture")
+    rows = cursor.fetchall()
+
+    voitures = []
+    for row in rows:
+        voitures.append(row)
+
+    conn.close()
+    return voitures
 
