@@ -10,3 +10,7 @@ v2 = Voiture("Honda", "Civic", 2021, 22000)
 
 ajouter_voiture(v1)
 ajouter_voiture(v2)
+print("Liste des voitures :")
+voitures = recuperer_voitures()
+for v in voitures:
+    print(v)
