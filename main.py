@@ -14,3 +14,11 @@ print("Liste des voitures :")
 voitures = recuperer_voitures()
 for v in voitures:
     print(v)
+v_mod = Voiture("Honda", "Accord", 2023, 27000, 2)
+modifier_voiture(v_mod)
+
+print("Après modification :")
+voitures = recuperer_voitures()
+for v in voitures:
+    print(v)
+
