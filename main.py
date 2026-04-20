@@ -21,4 +21,9 @@ print("Après modification :")
 voitures = recuperer_voitures()
 for v in voitures:
     print(v)
+supprimer_voiture(1)
 
+print("Après suppression :")
+voitures = recuperer_voitures()
+for v in voitures:
+    print(v)
